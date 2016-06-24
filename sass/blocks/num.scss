@@ -1,0 +1,11 @@
+.num {
+  @include font-param(141px, 182px, 500, #f0f4fb);
+  font-family: $font-4-fam;
+  display: block;
+  text-align: center;
+}
+
+.num--discount {
+  text-align: left;
+  @include font-param(94px, auto, 600, rgba(0, 112, 184, 0.1));
+}

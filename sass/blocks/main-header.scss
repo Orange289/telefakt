@@ -1,0 +1,75 @@
+.main-header {
+  @include clearfix();
+  background: url('../img/bg-header.jpg') no-repeat;
+  padding-top: 42px;
+  padding-bottom: 308px;
+  position: relative;
+}
+
+.main-header__logo {
+
+  img {
+    position: absolute;
+    top: 0;
+    @include size(289px, 45px);
+  }
+
+}
+
+.main-header__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 144px;
+  margin-left: 58px;
+  width: 720px;
+}
+
+.main-header__descr {
+  @include font-param(15px, 24px, 400, #444a5a);
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 58px;
+  width: 545px;
+}
+
+.main-header__prev,
+.main-header__next {
+  position: absolute;
+  display: block;
+  @include size(50px);
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.main-header__prev {
+  top: 387px;
+  left: 95px;
+}
+
+.main-header__prev::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  @include size(5px);
+  border-left: 2px solid #222222;
+  border-bottom: 2px solid #222222;
+  transform: rotate(45deg);
+}
+
+.main-header__next {
+  top: 387px;
+  left: 1788px;
+}
+
+.main-header__next::after {
+  content: '';
+  position: absolute;
+  top: 21px;
+  left: 22px;
+  @include size(5px);
+  border-left: 2px solid #222222;
+  border-bottom: 2px solid #222222;
+  transform: rotate(-125deg);
+}

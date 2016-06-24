@@ -1,0 +1,101 @@
+.statistic {
+  margin-top: 88px;
+  position: relative;
+}
+
+.statistic__title {
+  position: absolute;
+  top: 40px;
+  left: 443px;
+  @include font-param(35px 45px, 500, #777b85);
+  font-family: $font-4-fam;
+}
+
+.statistic__point--active {
+  border: 2px solid #0070b8;
+}
+
+.statistic__point {
+  border: 2px solid #7c99d6;
+  text-transform: uppercase;
+  padding-left: 307px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  position: relative;
+}
+
+.statistic__point--channels {
+  margin-top: 45px;
+}
+
+.statistic__point--channels span{
+  display: block;
+  width: 385px;
+  @include font-param(20px, 28px, 700, #7c99d6);
+  font-family: $font-2-fam;
+}
+
+.statistic__open {
+  position: absolute;
+  top: 32px;
+  left: 1140px;
+  display: block;
+  font-size: 0;
+  @include size(6px, 6px);
+  border-left: 2px solid #7c99d6;
+  border-bottom: 2px solid #7c99d6;
+  transform: rotate(-45deg);
+}
+
+.statistic__point--active .statistic__open{
+  border-color: #0070b8;
+}
+
+.statistic__point--radio {
+  border-bottom: none;
+}
+
+.statistic__content {
+  background-color: #f7fafd;
+}
+
+.statistic__title-content {
+  @include font-param(20px, 20px, 700, #777b85);
+  font-family: $font-2-fam;
+}
+
+.statistic__description {
+  @include font-param(15px, 20px, 400, #777b85);
+}
+
+.statistic__audience {
+  padding-top: 70px;
+  @include clearfix();
+}
+
+.statistic__audience-left{
+  float: left;
+  width: 470px;
+}
+
+.statistic__audience-right {
+  float: right;
+  width: 460px;
+  margin-top: -15px;
+}
+
+.statistic__amount {
+  float: right;
+  width: 230px;
+}
+
+.statistic__amount:last-child {
+  margin-left: -43px;
+  width: 240px;
+  margin-right: 30px;
+}
+
+.statistic__amount b {
+  @include font-param(54px, 54px, 700, #0070b8);
+  font-family: $font-2-fam;
+}

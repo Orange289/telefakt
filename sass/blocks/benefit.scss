@@ -1,0 +1,57 @@
+.benefit {
+  margin-top: 125px;
+  position: relative;
+  @include clearfix();
+}
+
+.benefit__num {
+  text-align: left;
+}
+
+.benefit__title {
+  position: absolute;
+  top: 42px;
+  @include font-param(35px 45px, 500, #777b85);
+  font-family: $font-4-fam;
+}
+
+.benefit__left {
+  float: left;
+  width: 573px;
+}
+
+.benefit__right {
+  float: right;
+  margin-top: -80px;
+  width: 570px;
+}
+
+.benefit__img {
+  @include size(570px, 481px);
+}
+
+.benefit__description {
+  padding: 0;
+  margin: 0;
+  margin-top: -15px;
+  width: 570px;
+  @include font-param(15px, 20px, 400);
+}
+
+.benefit__description--border {
+  border: 2px solid #0070b8;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: #0070b8;
+  width: 550px;
+}
+
+.benefit__description--bottom {
+  @include clearfix();
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 442px;
+}

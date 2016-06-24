@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'> -->
     <title>Telefakt</title>
   </head>
-  <body>
+  <body class="page-body">
     <div class="wrapper">
-      <header class="main-header clearfix">
+      <header class="main-header">
         <div class="container">
           <a class="main-header__logo" href="#">
-            <img src="img/index-logo.png" alt="logo" width="289" height="45">
+          <img src="img/index-logo.png" alt="logo" width="289" height="45">
           </a>
           <nav class="main-nav clearfix">
             <ul>
@@ -20,9 +21,9 @@
               <li><a href="#">Специальные предложения</a></li>
               <li><a href="#">Отзывы</a></li>
             </ul>
+            <span class="main-nav__phone">+7(999) 99 99 999</span>
           </nav>
-          <span class="main-header__phone">+7(999) 99 99 999</span>
-          <h1 class="main-header__title">Эффективная аудио и видео рекламав Челябинской области</h1>
+          <h1 class="main-header__title">Эффективная аудио<br>и видео реклама<br>в Челябинской области</h1>
           <p class="main-header__descr">
             Мы предоставляем качественные услуги по размещению вашей рекламы
             на радио и телеканалах Челябинской области
@@ -33,21 +34,24 @@
       </header>
       <main>
         <div class="container">
-          <form class="form-price-1" action="#">
-            <b class="form-price-1__title">Рассчитать стоимость размещения:</b>
-            <label for="id-name">Введите Ваше имя:</label>
-            <input class="form-price-1__input" name="name" id="id-name" type="text" placeholder="введите имя...">
-            <label for="id-name">Введите Ваш номер телефона:</label>
-            <input class="form-price-1__input" name="phone" id="id-phone" type="text" placeholder="введите номер телефона...">
-            <button type="submit">Отправить</button>
+          <form class="form-price-1 form" action="#">
+            <b class="form-price-1__title form__title">Рассчитать стоимость размещения:</b>
+            <label class="form-price-1__label form__label">
+              <span>Введите Ваше имя:</span>
+              <input class="form-price-1__input form__input" name="name" type="text" placeholder="введите имя...">
+            </label>
+            <label class="form-price-1__label form__label">
+              <span>Введите Ваш номер телефона:</span>
+              <input class="form-price-1__input form__input" name="phone" type="text" placeholder="введите номер телефона...">
+            </label>
+            <button class="form__btn form__btn--pink" type="submit">Отправить</button>
           </form>
           <section class="resources">
             <span class="num">01</span>
-            <h2 class="resources__title title">Мы размещаем свою рекламу на всех
-медио ресурсах Челябинской области</h2>
+            <h2 class="resources__title">Мы размещаем свою рекламу на всех медио ресурсах Челябинской области</h2>
             <div class="resources__list">
               <div class="resources__item">
-                <span class="resources__title resources__title--tv">
+                <span class="resources__point resources__point--tv">
                   Реклама на ТВ
                 </span>
                 <p>
@@ -55,10 +59,10 @@
                   радиостанциях как... как что? Где-то я помню
                   ты писал про то, что еще и радио добавится
                 </p>
-                <a class="resources__btn btn" href="#">Заказать</a>
+                <a class="form__btn form__btn--order" href="#">Заказать</a>
               </div>
               <div class="resources__item">
-                <span class="resources__title resources__title--radio">
+                <span class="resources__point resources__point--radio">
                   Реклама на радио
                 </span>
                 <p>
@@ -66,10 +70,10 @@
                   радиостанциях как... как что? Где-то я помню
                   ты писал про то, что еще и радио добавится
                 </p>
-                <a class="resources__btn btn" href="#">Заказать</a>
+                <a class="form__btn form__btn--order" href="#">Заказать</a>
               </div>
               <div class="resources__item">
-                <span class="resources__title resources__title--site">
+                <span class="resources__point resources__point--site">
                   Реклама на сайте
                 </span>
                 <p>
@@ -77,12 +81,422 @@
                   радиостанциях как... как что? Где-то я помню
                   ты писал про то, что еще и радио добавится
                 </p>
-                <a class="resources__btn btn" href="#">Заказать</a>
+                <a class="form__btn form__btn--order" href="#">Заказать</a>
               </div>
             </div>
           </section>
-          
+          <section class="benefit">
+            <span class="num benefit__num">02</span>
+            <h2 class="benefit__title">Почему это выгодно?</h2>
+            <div class='benefit__left'>
+              <p class="benefit__description benefit__description--left">
+                Впервые вещание на 23 телеканале в Челябинске началось 7 ноября 1992 г.,
+                когда ЗАО Ассоциация «Канал ТВ» получило вещательную лицензию и
+                организовало полноценное вещание. Оно началось с минимальной
+                производственной базы – в студии работало всего несколько
+                видеомагнитофонов SVHS и VHS форматов. Тем не менее, в эфире компании
+                были сделанные своими силами телепередачи – «Зеркало», «НЭП», «…».
+                Начинали строить канал Сергей Попов, Сергей Безгодов, Эдуард Бомке,
+                Ольга Разнополова и другие. С 1 мая 1995 г. вещание на 23 ТВК усиливается
+                благодаря созданной в составе ОАО «Челябинсксвязьинформа»
+                телерадиокомпании «Восточный экспресс», которая стала крупнейшей
+                телерадиокомпанией Южного Урала. Главным идеологом и отцом-основателем
+                и директором телекомпании стал Юрий Всеволодович Вишня. Также
+                1 мая 1995 г. Начинает регулярно выходить в эфир первая и главная
+                информационная программа ТРЦ «Восточный экспресс» — программа
+                «Телефакт».
+              </p>
+              <p class="benefit__description benefit__description--border">
+                Эту дату можно считать днём рождения ПЕРВОГО НЕГОСУДАРСТВЕННОГО
+                ВЕЩАНИЯ в Челябинске!
+              </p>
+            </div>
+            <div class="benefit__right">
+              <img class="benefit__img" src="img/img-benefit.jpg" width="570" height="481" alt="ВЫГОДА!!!">
+            </div>
+            <p class="benefit__description benefit__description--bottom">
+              Программа «Телефакт» занимает лидирующие позиции на информационном пространстве Челябинска и части Челябинской области. Как говорят сами журналисты,
+              «героями наших репортажей становились президенты и рабочие, звёзды и сельчане, академики и спортсмены, пастухи, лентяи и пр. Наши корреспонденты снимали
+              в разных городах — Челябинске и Челябинской области, Нью-Йорке и Праге, Чечне, Магадане, на олимпиаде в Пекине».
+            </p>
+          </section>
+          <section class="statistic">
+            <span class="num">03</span>
+            <h2 class="statistic__title">Наша статистика</h2>
+            <div class="statistic__item">
+              <div class="statistic__point statistic__point--active statistic__point--channels">
+                <span>Статистика каналов ДОмашний и восточный экспресс</span>
+                <a class="statistic__open statistic__open--channels" href="#">развернуть</a>
+              </div>
+              <div class="statistic__content">
+                <div class="container-inner">
+                  <div class="statistic__audience">
+                    <div class="statistic__audience-left">
+                      <b class="statistic__title-content">Распределение зрительской аудитории.</b>
+                      <p class="statistic__description">
+                        Канал Домашний/ВЭ четко ориентирован на женскую аудиторию: по ней он уверенно входит в топ-10 каналов города с долей 3,9%.
+                      </p>
+                    </div>
+                    <div class="statistic__audience-right">
+                      <div class="statistic__amount">
+                        <b>3,9%</b>
+                        <p class="statistic__description">
+                          Общая доля женской аудитории Домашний/ВЭ.
+                        </p>
+                      </div>
+                      <div class="statistic__amount">
+                        <b>3,3%</b>
+                        <p class="statistic__description">
+                          Общая доля Домашний/ВЭ<br>среди аналогичных каналов РФ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="statistic__channels">
+                    <b class="statistic__title-content">Охват каналов.</b>
+                    <p class="statistic__description">
+                      Описание небольшое
+                    </p>
+                    <div class="statistic__amount">
+                      <b>1100 000</b>
+                      <p class="statistic__description">
+                        Численность телеаудиторииЧелябинска
+                      </p>
+                    </div>
+                    <div class="statistic__amount">
+                      <b>346 000</b>
+                      <p class="statistic__description">
+                        Численность женскойтелеаудитории Челябинска
+                      </p>
+                    </div>
+                  </div>
+                  <div class="statistic__structure">
+                    <b class="statistic__title-content">Структура аудитории канала.</b>
+                    <p class="statistic__description">
+                      Аудитории каналов Домашний и Восточный экспресс совпадают по параметрам пол и возраст.
+                      Незначительное различие лишь в уровне дохода и занятости:  аудитория Восточного экспресса — более активная и состоятельная.
+                    </p>
+                  </div>
+                  <div class="statistic__channel statistic__channel--dom">
+                    <span class="statistic__right"></span>
+                    <span class="statistic__right"></span>
+                    <span class="statistic__bottom"></span>
+                    <span class="statistic__bottom"></span>
+                  </div>
+                  <div class="statistic__channel statistic__channel--vost">
+                    <span class="statistic__right"></span>
+                    <span class="statistic__right"></span>
+                    <span class="statistic__bottom"></span>
+                    <span class="statistic__bottom"></span>
+                  </div>
+                  <div class="statistic__top">
+                    <b class="statistic__title-content">Топ программ</b>
+                    <p class="statistic__description">
+                      Самые популярные жанры у женской аудитории — телесериалы, документальные сериалы, передачи о моде и дизайне.
+                      В топ-15 программ за год  вошли три программы производства Восточный экспресс. Но больший интерес все же к федеральному контенту.
+                    </p>
+                    <table class="statistic__table">
+                      <tr>
+                        <td>ДОМАШНИЙСватьи</td>
+                        <td>Телесериал</td>
+                        <td>27.04.2014</td>
+                        <td>Воскресенье</td>
+                        <td>12:29:50 8,5</td>
+                      </tr>
+                      <tr>
+                        <td>ВОСТОЧНЫЙ ЭКСПРЕСС Телефакт</td>
+                        <td>Новости</td>
+                        <td>16.12.2014</td>
+                        <td>Вторник</td>
+                        <td>21:30:07 8,0</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙ Вербное воскресенье 1 серия</td>
+                        <td>Телесериал</td>
+                        <td>31.03.2014</td>
+                        <td>Понедельник</td>
+                        <td>14:29:54 7,5</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙ Моя новая жизнь 4 серия</td>
+                        <td>Телесериал</td>
+                        <td>07.09.2014 </td>
+                        <td>Воскресенье</td>
+                        <td>21:42:50 7,5</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙ Одна за всех Юмористическая</td>
+                        <td>передача</td>
+                        <td>16.02.2014</td>
+                        <td>Воскресенье</td>
+                        <td>22:34:08 6,9</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙ Звездные истории Жанна Фриске </td>
+                        <td>Документальный сериал</td>
+                        <td>16.02.2014</td>
+                        <td>Воскресенье</td>
+                        <td>21:44:46 6,9</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙ Настоящая Ванга Затмение</td>
+                        <td>Документальный сериал</td>
+                        <td>15.11.2014</td>
+                        <td>Суббота</td>
+                        <td>14:07:51 6,7</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙСватьи</td>
+                        <td>Телесериал</td>
+                        <td>27.04.2014</td>
+                        <td>Воскресенье</td>
+                        <td>12:29:50 8,5</td>
+                      </tr>
+                      <tr>
+                        <td>ВОСТОЧНЫЙ ЭКСПРЕСС Телефакт</td>
+                        <td>Новости</td>
+                        <td>16.12.2014</td>
+                        <td>Вторник</td>
+                        <td>21:30:07 8,0</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙ Вербное воскресенье 1 серия</td>
+                        <td>Телесериал</td>
+                        <td>31.03.2014</td>
+                        <td>Понедельник</td>
+                        <td>14:29:54 7,5</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙ Моя новая жизнь 4 серия</td>
+                        <td>Телесериал</td>
+                        <td>07.09.2014</td>
+                        <td>Воскресенье</td>
+                        <td>21:42:50 7,5</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙ Одна за всех Юмористическая 	</td>
+                        <td>передача</td>
+                        <td>16.02.2014</td>
+                        <td>Воскресенье</td>
+                        <td>22:34:08 6,9</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙ Звездные истории Жанна Фриске</td>
+                        <td>Документальный сериал</td>
+                        <td>16.02.2014</td>
+                        <td>Воскресенье</td>
+                        <td>21:44:46 6,9</td>
+                      </tr>
+                      <tr>
+                        <td>ДОМАШНИЙ Настоящая Ванга Затмение</td>
+                        <td>Документальный сериал</td>
+                        <td>15.11.2014</td>
+                        <td>Суббота</td>
+                        <td>14:07:51 6,7</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="statistic__range">
+                    <b class-"statistic__point">Охват каналов</b>
+                    <p class="statistic__description">
+                      Во время включений Восточного экспресса рейтинг телеканала несколько снижается.
+                      Исключение составляет праймовое время с 21:00 до 22:00 в будни, когда рейтинг напротив возрастает за счет интереса к местным новостям.
+                      Сотрудничество с каналом Домашний помогает удерживать аудиторию на канале вне вещания Восточного экспресса, поддерживать ее интерес к данной частоте.
+                    </p>
+                  </div>
+                  <div class="statistic__weekdays">
+                    <b class="statistic__title-content">Будни</b>
+                    <img src="#" alt="График">
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                    <span class="statistic__scale">05<sup>00</sup>-06<sup>00</sup></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="statistic__item">
+              <div class="statistic__point statistic__point--radio">
+                <span>Статистика радиостанции такой-то</span>
+                <a class="statistic__open statistic__open--radio" href="#">развернуть</a>
+              </div>
+            </div>
+            <div class="statistic__item">
+              <div class="statistic__point statistic__point--site">
+                <span>Статистика сайта телефакт.рф</span>
+                <a class="statistic__open statistic__open--site" href="#">развернуть</a>
+              </div>
+            </div>
+          </section>
         </div>
+        <form class="form-price-2 form" action="#">
+          <div class="container">
+            <b class="form-price-2__title form__title">Рассчитать стоимость размещения:</b>
+            <label class="form-price-2__label form__label">
+              <span>Введите Ваше имя:</span>
+              <input class="form-price-2__input form__input" type="text" placeholder="введите имя...">
+            </label>
+            <label class="form-price-2__label form__label">
+              <span>Введите Ваш номер телефона:</span>
+              <input class="form-price-2__input form__input" type="text" placeholder="введите номер телефона...">
+            </label>
+            <button class="form__btn form__btn--white" type="submit">Отправить</button>
+          </div>
+        </form>
+        <section class="discounts">
+          <div class="container">
+            <span class="num">04</span>
+            <h2 class="discounts__title">Специальные предложения</h2>
+            <div class="discounts__item">
+              <span class="num num--discount">01</span>
+              <span class="discounts__value">-35%</span>
+              <b>рекламая вставкапри просмотре прогноза погоды</b>
+              <p class="discounts__description">
+                • спонсорство прогноза погоды на радио;
+                • устное представление ведущим спонсора;
+                • ежедневно по 6 выходов + 2 выхода в рекламных блоках.
+              </p>
+              <p class="discounts__point">
+                <span class="discounts__bold">Сроки: </span>
+                январь – февраль 2016г.;
+              </p>
+              <p class="discounts__point">
+                <span class="discounts__bold">Длительность ролика: </span>
+                25 сек.
+              </p>
+              <p class="discounts__point">
+                <span class="discount__bold">Итого: </span>
+                360 выходов
+              </p>
+            </div>
+            <div class="discounts__item discounts__item--active">
+              <span class="num num--discount">02</span>
+              <span class="discounts__value">-30%</span>
+              <span class="discounts__calc">100+100=300</span>
+              <p class="discounts__description">
+              Размещение на выбор: ТВ «31 канал», радио «DFM», радио «Эхо Москвы»
+              </p>
+              <p class="discounts__point">
+                <span class="discounts__bold">Сроки: </span>
+                «100 показов январь 2016»  + «100 показов февраль 2016» = «100 показов
+                март 2016 в подарок»
+              </p>
+              <p class="discounts__point">
+                <span class="discounts__bold">Длительность ролика: </span>
+                15 сек.
+              </p>
+              <p class="discounts__point">
+                <span class="discount__bold">Итого: </span>
+                300 выходов в межпрограммное время
+              </p>
+            </div>
+            <div class="discounts__item">
+              <span class="num num--discount">03</span>
+              <span class="discounts__value">-22%</span>
+              <b>рекламая вставкапри просмотре прогноза погоды</b>
+              <p class="discounts__description">
+                • спонсорство прогноза погоды на радио;
+                • устное представление ведущим спонсора;
+                • ежедневно по 6 выходов + 2 выхода в рекламных блоках.
+              </p>
+              <p class="discounts__point">
+                <span class="discounts__bold">Сроки: </span>
+                январь – февраль 2016г.;
+              </p>
+              <p class="discounts__point">
+                <span class="discounts__bold">Длительность ролика: </span>
+                25 сек.
+              </p>
+              <p class="discounts__point">
+                <span class="discount__bold">Итого: </span>
+                360 выходов
+              </p>
+            </div>
+            <button class="form__btn form__btn--blue" type="submit">Отправить</button>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="num">05</div>
+          <div class="slider">
+            <blockquote class="reviews__item slider__item">
+              <div class="container">
+                <img class="reviews__porsche" src="img/logo-porsche.png" width="93" height="120">
+                <a class="reviews__prev" href="#"></a>
+                <p class="reviews__content">
+                  Размещали ролик в начале февраля, остались довольны,
+                  за данное время серьёзно продвинули свой новый автомобиль на рынок
+                  и получили хорошую консультацию специалистив в области размещения
+                  цифровой рекламы. Благодарим за сотрудничество
+                </p>
+                <cite class="reviews__author">
+                  Константин Абрамов
+                  <span class="reviews__author-data">Ведущий специалист отдела рекламы Porsche Сейхо Моторс Спорт</span>
+                </cite>
+                <a class="reviews__next" href="#"></a>
+              </div>
+            </blockquote>
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-1">
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-2" checked>
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-4">
+            <div class="reviews__toggles slider__toggles">
+              <label class="slider__toggle" for="reviews-input-1">1</label>
+              <label class="slider__toggle" for="reviews-input-2">2</label>
+              <label class="slider__toggle" for="reviews-input-3">3</label>
+              <label class="slider__toggle" for="reviews-input-3">4</label>
+            </div>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="container">
+            <h1>Увеличить узнаваемость своего бренда Просто!</h1>
+            <form class="feedback__form form" action="#">
+              <b class="feedback__form-title form__title">Оставить заявку</b>
+              <label class="feedback__label form__label">Введите Ваше имя:
+                <input class="feedback__input form__input" type="text" placeholder="введите имя...">
+              </label>
+              <label class="feedback__label form__label">Введите Ваш номер телефона:
+                <input class="feedback__input form__input" type="text" placeholder="введите номер телефона...">
+              </label>
+              <button class="form__btn form__btn--pink">Отправить</button>
+            </form>
+          </div>
+        </section>
       </main>
+      <footer class="contacts">
+        <div class="container">
+          <b class="contacts__title">Наши контакты:</b>
+          <div class="contacts__item">
+            <span>8(999)99-99-999</span>
+          </div>
+          <div class="contacts__item">
+            <span>454048, г. Челябинск, ул. Уличная, 3, офис 111</span>
+          </div>
+          <div class="contacts__item">
+            <span>main@mail.ru</span>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>

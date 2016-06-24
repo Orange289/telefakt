@@ -1,0 +1,41 @@
+.resources {
+  margin-top: -15px;
+  position: relative;
+}
+
+.resources__title {
+  position: absolute;
+  top: 20px;
+  left: 260px;
+  width: 650px;
+  text-align: center;
+  @include font-param(35px 45px, 500, #777b85);
+  font-family: $font-4-fam;
+}
+
+.resources__list {
+  margin-top: 112px;
+}
+
+.resources__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 360px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.resources__item p {
+  padding: 22px 20px;
+  @include font-param(15px, 20px, 400, #777b85);
+}
+
+.resources__item:last-child {
+  margin-right: 0;
+}
+
+.resources__point {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}

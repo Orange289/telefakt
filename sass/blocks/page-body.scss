@@ -1,0 +1,41 @@
+@font-face {
+  @include font-setup($font-1-fam, $font-1-local, $font-1-url1, $font-1-url2);
+}
+@font-face {
+  @include font-setup($font-2-fam, $font-2-local, $font-2-url1, $font-2-url2);
+}
+@font-face {
+  @include font-setup($font-3-fam, $font-3-local, $font-3-url1, $font-3-url2);
+}
+@font-face {
+  @include font-setup($font-4-fam, $font-4-local, $font-4-url1, $font-4-url2);
+}
+@font-face {
+  @include font-setup($font-5-fam, $font-5-local, $font-5-url1, $font-5-url2);
+}
+
+.page-body {
+  background-color: #939393;
+  font-family: $font-1-fam;
+
+  h1 {
+    @include font-param(60px, 70px, 700, #0070b8);
+    font-family: $font-2-fam;
+  }
+
+  h2 {
+    @include font-param(35px, 45px, 500, #777b85);
+    font-family: $font-4-fam;
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+}
