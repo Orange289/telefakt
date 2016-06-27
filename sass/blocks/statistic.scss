@@ -99,3 +99,32 @@
   @include font-param(54px, 54px, 700, #0070b8);
   font-family: $font-2-fam;
 }
+
+.statistic__channels {
+  @include clearfix;
+  padding-top: 100px;
+}
+
+.statistic__channels-left {
+  float: left;
+  width: 470px;
+}
+
+.statistic__channels-right {
+  float: right;
+  width: 460px;
+  margin-top: -15px;
+}
+
+.statistic__structure {
+  padding-top: 70px;
+}
+
+.statistic__structure .statistic__title-content {
+  display: block;
+  margin-bottom: -8px;
+}
+
+.statistic__structure .statistic__description {
+  line-height: 38px;
+}
