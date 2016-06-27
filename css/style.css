@@ -534,6 +534,11 @@
 .statistic__structure .statistic__description {
   line-height: 38px; }
 
+.statistic__charts::after {
+  content: '';
+  display: table;
+  clear: both; }
+
 .statistic__channel {
   position: relative; }
 
@@ -639,6 +644,37 @@
 .statistic__sex-age--2 {
   top: 177px;
   left: 290px; }
+
+.statistic__top {
+  margin-top: 90px; }
+
+.statistic__table {
+  margin-top: 62px;
+  width: 100%; }
+
+.statistic__table tr {
+  border-bottom: 2px solid #a1b8d1; }
+
+.statistic__table td {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.statistic__table td:first-child {
+  padding-left: 62px; }
+
+.statistic__table td:last-child {
+  padding-right: 58px;
+  padding-left: 46px; }
+
+.statistic__table td:nth-child(2) {
+  padding-left: 92px;
+  width: 142px; }
+
+.statistic__table td:nth-child(4) {
+  padding-left: 30px; }
+
+.statistic__row-active {
+  background-color: #deecf6; }
 
 .form-price-2 {
   margin-top: 151px;
