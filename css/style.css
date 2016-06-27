@@ -457,13 +457,18 @@
 
 .statistic__content {
   background-color: #f7fafd; }
+  .statistic__content::after {
+    content: '';
+    display: table;
+    clear: both; }
 
 .statistic__title-content {
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
   color: #777b85;
-  font-family: "ubuntubold"; }
+  font-family: "ubuntubold";
+  display: block; }
 
 .statistic__description {
   font-size: 15px;
@@ -528,6 +533,112 @@
 
 .statistic__structure .statistic__description {
   line-height: 38px; }
+
+.statistic__channel {
+  position: relative; }
+
+.statistic__channel--dom {
+  float: left;
+  width: 533px;
+  margin-top: 37px; }
+
+.statistic__channel--vost {
+  float: right;
+  width: 474px;
+  margin-top: 37px; }
+
+.statistic__channel span {
+  display: inline-block;
+  vertical-align: top; }
+
+.statistic__right {
+  padding-left: 133px;
+  margin-right: 65px;
+  padding-top: 88px;
+  position: relative; }
+
+.statistic__right::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 114px;
+  height: 114px; }
+
+.statistic__right:nth-of-type(1)::before {
+  background: url("../img/chart-1.png") no-repeat; }
+
+.statistic__right:nth-of-type(2)::before {
+  background: url("../img/chart-2.png") no-repeat; }
+
+.statistic__right:nth-of-type(2) {
+  margin-right: 0; }
+
+.statistic__channel--dom .statistic__right:nth-of-type(2) {
+  margin-top: -18px; }
+
+.statistic__channel--dom .statistic__right:nth-of-type(2)::before {
+  top: 53px; }
+
+.statistic__channel--vost .statistic__right:nth-of-type(2) {
+  margin-top: -30px; }
+
+.statistic__channel--vost .statistic__right:nth-of-type(2)::before {
+  top: 65px; }
+
+.statistic__right::after {
+  content: "19%";
+  top: 84px;
+  left: 40px;
+  position: absolute;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #a1b8d1; }
+
+.statistic__right:nth-of-type(2)::after {
+  content: "51%";
+  color: #0288de; }
+
+.statistic__channel--dom .statistic__right:nth-of-type(2)::after {
+  top: 100px; }
+
+.statistic__channel--vost .statistic__right:nth-of-type(2)::after {
+  top: 110px; }
+
+.statistic__bottom {
+  padding-top: 124px;
+  position: relative;
+  margin-right: 148px;
+  margin-top: 88px; }
+
+.statistic__bottom:nth-of-type(4) {
+  margin-right: 0; }
+
+.statistic__bottom::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 114px;
+  height: 114px; }
+
+.statistic__bottom:nth-of-type(3)::before {
+  background: url("../img/chart-3.png") no-repeat; }
+
+.statistic__bottom:nth-of-type(4)::before {
+  background: url("../img/chart-4.png") no-repeat; }
+
+.statistic__sex-age {
+  position: absolute; }
+
+.statistic__sex-age--1 {
+  top: 177px;
+  left: 41px; }
+
+.statistic__sex-age--2 {
+  top: 177px;
+  left: 290px; }
 
 .form-price-2 {
   margin-top: 151px;
