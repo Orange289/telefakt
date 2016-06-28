@@ -414,21 +414,25 @@
   color: #777b85;
   font-family: "ubuntumedia"; }
 
-.statistic__point--active {
-  border: 2px solid #0070b8; }
-
 .statistic__point {
-  border: 2px solid #7c99d6;
+  border: 3px solid #7c99d6;
   text-transform: uppercase;
   padding-left: 307px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   position: relative; }
+
+.statistic__point--site {
+  padding-top: 40px;
+  padding-bottom: 55px; }
+
+.statistic__point--active {
+  border-color: #0070b8; }
 
 .statistic__point--channels {
   margin-top: 45px; }
 
-.statistic__point--channels span {
+.statistic__point span {
   display: block;
   width: 385px;
   font-size: 20px;
@@ -437,10 +441,13 @@
   color: #7c99d6;
   font-family: "ubuntubold"; }
 
+.statistic__point--active span {
+  color: #0070b8; }
+
 .statistic__open {
   position: absolute;
-  top: 32px;
-  left: 1140px;
+  top: 59px;
+  left: 1130px;
   display: block;
   font-size: 0;
   width: 6px;
@@ -675,6 +682,9 @@
 
 .statistic__row-active {
   background-color: #deecf6; }
+
+.statistic__range {
+  margin-top: 100px; }
 
 .form-price-2 {
   margin-top: 151px;
