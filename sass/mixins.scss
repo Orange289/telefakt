@@ -25,3 +25,20 @@
   font-weight: $w;
   color: $c;
 };
+
+@mixin review($i) {
+  .slider__input:nth-of-type(#{$i}):checked ~ .reviews__items > .reviews__item:nth-child(#{$i}) {
+    display: block;
+  }
+}
+
+@mixin toggle($id) {
+  ##{$id}:checked ~ .slider__toggles .slider__toggle[for='#{$id}'] {
+    background-color: #ffffff;
+    border: 3px solid #777b85;
+    @include size(6px, 6px);
+    border-radius: 50%;
+    position:relative;
+    top: -3px;
+  }
+}

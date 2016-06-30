@@ -6,6 +6,8 @@
 }
 
 .num--discount {
+  display: block;
   text-align: left;
-  @include font-param(94px, auto, 600, rgba(0, 112, 184, 0.1));
+  @include font-param(94px, 94px, 600, rgba(0, 112, 184, 0.1));
+  font-style: italic;
 }

@@ -3,9 +3,15 @@
   background: url('../img/bg-price-2.jpg') no-repeat;
   width: 100%;
   box-shadow: 0 0 65px rgba(230, 24, 136, 0.44);
+
+  span {
+    @include font-param(15px, 24px, 700, #ffffff);
+  }
+  
 }
 
 .form-price-2__title {
+  @include font-param(20px, 24px, 700, #ffffff);
   padding-top: 35px;
   padding-bottom: 21px;
 }

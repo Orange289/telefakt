@@ -34,6 +34,7 @@
   padding-bottom: 10px;
   width: 400px;
   border-radius: 4px;
+  outline: none;
 }
 
 .form__btn {
@@ -67,9 +68,20 @@
 
 .form__btn--white {
   position: absolute;
-  top: 190px;
-  left: 485px;
+  top: 201px;
+  left: 488px;
   padding: 10px 36px;
   background-color: #ffffff;
   box-shadow: 0 0 29px rgba(230, 0, 125, 0.32);
+  @include font-param(20px, 24px, 700, #e6007d);
+}
+
+.form__btn--blue {
+  position: absolute;
+  top: 672px;
+  left: 480px;
+  background-color: #0070b8;
+  padding: 11px 40px;
+  @include font-param(20px, 24px, 700, #ffffff);
+  box-shadow: 0 0 29px rgba(17, 162, 255, 0.23);
 }

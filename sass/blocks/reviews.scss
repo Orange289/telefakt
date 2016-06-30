@@ -1,0 +1,77 @@
+.reviews {
+  position: relative;
+  margin-top: 96px;
+}
+
+.reviews__title {
+  position: absolute;
+  top: 40px;
+  left: 890px;
+}
+
+.reviews__item {
+  display: none;
+  padding-top: 30px;
+  padding-bottom: 76px;
+  text-align: center;
+}
+
+.reviews__toggles {
+  position: absolute;
+  top: 400px;
+  left: 48%;
+}
+
+.reviews__content {
+  @include font-param(20px, 26px, 700, #777b85);
+  font-family: $font-2-fam;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+.reviews__author {
+  margin-top: 5px;
+  display: block;
+  @include font-param(15px, 24px, 400, #777b85);
+}
+
+.reviews__author-data {
+  @include font-param(15px, 24px, 400, #777b85);
+  font-style: italic;
+}
+
+.reviews__next, .reviews__prev {
+  position: relative;
+}
+
+.reviews__next::before,
+.reviews__prev::before {
+  content: '';
+  position: absolute;
+  top: 218px;
+  @include size(4px);
+  border-left: 2px solid #313131;
+  border-bottom: 2px solid #313131;
+  cursor: pointer;
+}
+
+.reviews__prev::before {
+  left: 345px;
+  transform: rotate(45deg);
+}
+
+.reviews__next::before {
+  left: 1565px;
+  transform: rotate(-145deg);
+}
+
+
+@include review(1);
+@include review(2);
+@include review(3);
+@include review(4);
+
+@include toggle(reviews-input-1);
+@include toggle(reviews-input-2);
+@include toggle(reviews-input-3);
+@include toggle(reviews-input-4);

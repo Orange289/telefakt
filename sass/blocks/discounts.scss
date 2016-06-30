@@ -1,20 +1,24 @@
 .discounts {
-  margin-top: 96px;
+  margin-top: 86px;
   position: relative;
 }
 
 .discounts__title {
   position: absolute;
-  top: 70px;
-  left: 360px;
+  top: 40px;
+  left: 350px;
 }
 
 .discounts__item {
-  margin-top: 29px;
+  margin-top: 39px;
+  padding-top: 38px;
+  padding-left: 18px;
+  padding-right: 20px;
+  padding-bottom: 75px;
   display: inline-block;
   vertical-align: top;
-  width: 368px;
-  margin-right: 30px;
+  width: 330px;
+  margin-right: 28px;
   background-color: #f0f4fb;
   position: relative;
 }
@@ -30,7 +34,46 @@
 
 .discounts__value {
   position: absolute;
-  top: 21px;
+  top: 11px;
   left: 232px;
-  @include font-param(50px, auto, 600, #e6007d);
+  @include font-param(50px, auto, 700, #eb7abc);
+  font-family: $font-2-fam;
+
+}
+
+.discounts__item b {
+  @include font-param(20px, 26px, 700, #0070b8);
+  font-family: $font-2-fam;
+  text-transform: uppercase;
+  position: absolute;
+  width: 220px;
+  top: 90px;
+  left: 35px;
+}
+
+.discounts__description {
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 17px;
+  @include font-param(15px, 20px, 400, #777b85);
+}
+
+.discounts__point {
+  @include font-param(15px, 20px, 400, #777b85);
+  margin: 0;
+  padding-left: 17px;
+}
+
+.discounts__point:nth-of-type(2) {
+  margin-top: 80px;
+}
+
+.discounts__item--active .discounts__point:nth-of-type(2) {
+  margin-top: 60px;
+}
+
+.discounts__bold {
+  font-weight: 700px;
+  font-family: $font-2-fam;
 }

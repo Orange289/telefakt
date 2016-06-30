@@ -1,0 +1,46 @@
+.feedback {
+  margin-top: 111px;
+  background: url('../img/bg-feedback.jpg') no-repeat;
+  padding-top: 113px;
+  padding-bottom: 32px;
+  position: relative;
+
+  h1 {
+    width: 440px;
+  }
+
+}
+
+.feedback__form {
+  position: absolute;
+  top: -40px;
+  left: 597px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 65px 0 rgba(60, 108, 222, 0.25);
+  width: 369px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.feedback__form-title {
+  @include font-param(20px, 24px, 700, #7c99d6);
+  font-family: $font-2-fam;
+  padding-bottom: 40px;
+}
+
+.feedback__label {
+  @include font-param(15px, 24px, 700, #444a5a);
+  font-family: $font-2-fam;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback__input {
+  border: none;
+  border: 2px solid #e7efff;
+  width: 307px;
+  padding: 0;
+  padding: 17px 29px;
+
+}
