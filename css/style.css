@@ -876,7 +876,7 @@
   transform: rotate(45deg); }
 
 .reviews__next::before {
-  left: 1565px;
+  left: 1570px;
   transform: rotate(-145deg); }
 
 .slider__input:nth-of-type(1):checked ~ .reviews__items > .reviews__item:nth-child(1) {
@@ -953,7 +953,7 @@
   margin-top: 111px;
   background: url("../img/bg-feedback.jpg") no-repeat;
   padding-top: 113px;
-  padding-bottom: 32px;
+  padding-bottom: 100px;
   position: relative; }
   .feedback h1 {
     width: 440px; }
@@ -984,11 +984,58 @@
   color: #444a5a;
   font-family: "ubuntubold";
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  display: block;
+  margin-bottom: 24px; }
+
+.feedback__label:nth-of-type(2) {
+  margin-bottom: 0; }
 
 .feedback__input {
   border: none;
   border: 2px solid #e7efff;
   width: 307px;
   padding: 0;
-  padding: 17px 29px; }
+  padding: 17px 29px;
+  margin-top: 10px; }
+
+.feedback__btn {
+  top: 330px;
+  left: 189px; }
+
+.contacts {
+  background-color: #272a31;
+  padding-top: 41px;
+  padding-bottom: 140px; }
+
+.contacts__title {
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "ubuntumedia"; }
+
+.contacts__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 78px;
+  margin-right: 114px;
+  padding-left: 80px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 220px; }
+
+.contacts__item:nth-of-type(1) {
+  margin-right: 100px; }
+
+.contacts__item:nth-of-type(2) {
+  width: 230px;
+  margin-right: 95px;
+  margin-top: 65px; }
+
+.contacts__item:last-of-type {
+  margin-right: 0; }
