@@ -1,0 +1,59 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-call {
+    width: 29px;
+    height: 27px;
+    background-position: -15px -15px;
+}
+
+.sprite-icon-email {
+    width: 29px;
+    height: 22px;
+    background-position: -15px -72px;
+}
+
+.sprite-icon-location {
+    width: 22px;
+    height: 27px;
+    background-position: -15px -124px;
+}
+
+.sprite-icon-radio {
+    width: 218px;
+    height: 188px;
+    background-position: -15px -181px;
+}
+
+.sprite-icon-site {
+    width: 212px;
+    height: 140px;
+    background-position: -15px -399px;
+}
+
+.sprite-icon-stat-radio {
+    width: 122px;
+    height: 107px;
+    background-position: -15px -569px;
+}
+
+.sprite-icon-stat-site {
+    width: 145px;
+    height: 100px;
+    background-position: -15px -706px;
+}
+
+.sprite-icon-stat-tv {
+    width: 122px;
+    height: 95px;
+    background-position: -15px -836px;
+}
+
+.sprite-icon-tv {
+    width: 169px;
+    height: 152px;
+    background-position: -15px -961px;
+}

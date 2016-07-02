@@ -33,11 +33,35 @@
   margin-top: 45px;
 }
 
-.statistic__point span{
+.statistic__point span {
   display: block;
   width: 385px;
   @include font-param(20px, 28px, 700, #7c99d6);
   font-family: $font-2-fam;
+  position: relative;
+}
+
+.statistic__point span::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: -218px;
+  background: url('../img/sprite.png') no-repeat;
+}
+
+.statistic__point--channels span::before {
+  @include size(122px, 95px);
+  background-position: -15px -836px;
+}
+
+.statistic__point--radio span::before {
+  @include size(122px, 107px);
+  background-position: -15px -569px;
+}
+
+.statistic__point--site span::before {
+  @include size(145px, 100px);
+  background-position: -15px -706px;
 }
 
 .statistic__point--active span {

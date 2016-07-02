@@ -36,6 +36,35 @@
 
 .resources__point {
   display: block;
-  text-align: center;
-  text-transform: uppercase;
+  font-size: 0;
+  position: relative;
+  width: 93px;
+  height: 120px;
+}
+
+.resources__point::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 92px;
+  background: url('../img/sprite.png') no-repeat;
+}
+
+.resources__point--tv::before {
+  @include size(169px, 152px);
+  background-position: -15px -961px;
+}
+
+.resources__point--radio::before {
+  @include size(218px, 188px);
+  background-position: -15px -181px;
+  top: -49px;
+  left: 76px;
+}
+
+.resources__point--site::before {
+  @include size(212px, 140px);
+  background-position: -15px -399px;
+  top: -5px;
+  left: 69px;
 }

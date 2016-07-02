@@ -336,8 +336,36 @@
 
 .resources__point {
   display: block;
-  text-align: center;
-  text-transform: uppercase; }
+  font-size: 0;
+  position: relative;
+  width: 93px;
+  height: 120px; }
+
+.resources__point::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 92px;
+  background: url("../img/sprite.png") no-repeat; }
+
+.resources__point--tv::before {
+  width: 169px;
+  height: 152px;
+  background-position: -15px -961px; }
+
+.resources__point--radio::before {
+  width: 218px;
+  height: 188px;
+  background-position: -15px -181px;
+  top: -49px;
+  left: 76px; }
+
+.resources__point--site::before {
+  width: 212px;
+  height: 140px;
+  background-position: -15px -399px;
+  top: -5px;
+  left: 69px; }
 
 .num {
   font-size: 141px;
@@ -458,7 +486,30 @@
   line-height: 28px;
   font-weight: 700;
   color: #7c99d6;
-  font-family: "ubuntubold"; }
+  font-family: "ubuntubold";
+  position: relative; }
+
+.statistic__point span::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: -218px;
+  background: url("../img/sprite.png") no-repeat; }
+
+.statistic__point--channels span::before {
+  width: 122px;
+  height: 95px;
+  background-position: -15px -836px; }
+
+.statistic__point--radio span::before {
+  width: 122px;
+  height: 107px;
+  background-position: -15px -569px; }
+
+.statistic__point--site span::before {
+  width: 145px;
+  height: 100px;
+  background-position: -15px -706px; }
 
 .statistic__point--active span {
   color: #0070b8; }
