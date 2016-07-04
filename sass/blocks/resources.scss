@@ -28,6 +28,7 @@
 .resources__item p {
   padding: 22px 20px;
   @include font-param(15px, 20px, 400, #777b85);
+  font-family: $font-4-fam;
 }
 
 .resources__item:last-child {
